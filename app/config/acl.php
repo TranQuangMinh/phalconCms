@@ -5,7 +5,7 @@ return [
     // frontend
     'guest'      => [
         'admin'       => '*',
-        'postsm/posts'       => '*',
+        'Postsm/index'       => '*',
         // 'index/index'       => '*',
         // 'index/error'       => '*',
         // 'page/index'        => '*',

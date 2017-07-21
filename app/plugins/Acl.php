@@ -26,9 +26,9 @@ class Acl extends Plugin
         $controller = $dispatcher->getControllerName();
         $action = $dispatcher->getActionName();
 
-        $resourceKey = $namespace . '/' . $controller;
+        $resourceKey = $module . '/' . $controller;
         $resourceVal = $action;
-        
+
         if ($acl->isResource($resourceKey)) {
             if (!$acl->isAllowed($role, $resourceKey, $resourceVal)) {
                 $this->accessDenied($role, $resourceKey, $resourceVal, $view);
