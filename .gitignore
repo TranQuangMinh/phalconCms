@@ -3,6 +3,8 @@ node_modules/
 vendor/
 docker/
 cms/
+data/
+log/
 
 composer.lock
 composer.phar
